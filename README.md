@@ -1,6 +1,6 @@
 # twitch_crawler
 
-> A Vue.js project
+> A Vue.js project that acts as a UI for twich_crawler_api .
 
 ## Build Setup
 
@@ -18,4 +18,4 @@ npm run build
 npm run build --report
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+Replace 'http://localhost:8888' by your twitch_crawler_api address in src/api/index.js
