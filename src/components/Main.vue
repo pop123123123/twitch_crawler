@@ -67,7 +67,7 @@
           </p>
           <template v-if="show_streamers_list">
             <ul id="channels" class="list-group">
-              <li class="list-group-item" v-for="i in streamers">
+              <li class="list-group-item" @click="getStreamer(i.name)" v-for="i in streamers">
                 <ul>
                   <li>
                     <img class="logo" :src="i.logo"/>
@@ -187,6 +187,14 @@ ul {
 #channel_panels{
   position: relative;
   border: 1px #888 solid;
+}
+
+.list-group-item{
+  cursor: pointer;
+}
+
+.list-group-item:hover{
+  background-color: #eee;
 }
 
 .logo{
